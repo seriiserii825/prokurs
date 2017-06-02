@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?52zctl');
+  src:  url('fonts/icomoon.eot?52zctl#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?52zctl') format('truetype'),
+    url('fonts/icomoon.woff?52zctl') format('woff'),
+    url('fonts/icomoon.svg?52zctl#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-book:before {
+  content: "\e900";
+}
+.icon-citizen:before {
+  content: "\e901";
+}
+.icon-hamburger:before {
+  content: "\e902";
+}
+.icon-heat:before {
+  content: "\e903";
+}
+.icon-ielts:before {
+  content: "\e904";
+}
+.icon-marker:before {
+  content: "\e905";
+}
+.icon-methodika:before {
+  content: "\e906";
+}
+.icon-student:before {
+  content: "\e907";
+}
+.icon-ten-years:before {
+  content: "\e908";
+}
+.icon-world:before {
+  content: "\e909";
+}

@@ -1,5 +1,5 @@
 {
-  "name": "armata.loc",
+  "name": "prokurs",
   "version": "1.0.0",
   "description": "website",
   "main": "gulpfile.js",
@@ -28,5 +28,16 @@
     "gulp-uglify": "^2.0.0",
     "gulp.spritesmith": "^6.2.1",
     "rimraf": "^2.5.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seriiserii825/prokurs.git"
+  },
+  "keywords": [
+    "prokurs"
+  ],
+  "bugs": {
+    "url": "https://github.com/seriiserii825/prokurs/issues"
+  },
+  "homepage": "https://github.com/seriiserii825/prokurs#readme"
 }

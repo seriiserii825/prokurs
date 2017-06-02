@@ -71,7 +71,7 @@ gulp.task('cleanmin', function (cb) {
 gulp.task('min', ['cleanmin','cssmin', 'jsmin']);
 
 gulp.task('libs', function(){
-    gulp.src('src/libs/')
+    gulp.src('src/libs/**/*.*')
         .pipe(gulp.dest('build/libs/'))
 });
 
@@ -125,8 +125,8 @@ gulp.task('build', [
 gulp.task('browser-sync', function () {
 
     browserSync.init({
-        proxy: "armata.loc/build",
-        notify: false
+        proxy: "ProKurs/build",
+        notify: true
     });
 });
 

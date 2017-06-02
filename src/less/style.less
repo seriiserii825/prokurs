@@ -1,10 +1,23 @@
 @import "imports/variables";
 @import "imports/_mixins";
 @import "imports/fonts";
+@import (less) "../libs/icomoon/icon-moon.css";
 @import "imports/sprite";
 @import "imports/icons";
 @import "imports/base";
 
-/*header*/
-@import "pages/header";
 
+.icon-world{
+	font-size: 200px;
+	color: red;
+	transition: all .5s;
+	cursor: pointer;
+	&:hover{
+		font-size: 400px;
+		color: yellow;
+	}
+}
+.icon-book{
+	font-size: 16px;
+	color: blue;
+}
