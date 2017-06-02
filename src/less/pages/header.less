@@ -1,0 +1,123 @@
+/*header-main
+===============================*/
+.header-main{
+	padding-top: 34px;
+	min-height: 640px;
+	background: url("../img/header-bg.jpg") no-repeat center;
+	background-size: cover;
+	color: @textWhite;
+	.header-top{
+		margin-bottom: 60px;
+	}
+	.logo{
+		font-size: 40px;
+		color: inherit;
+		@media screen and (max-width: @sm) {
+		 	 display: table;
+		 	 margin: 0 auto;
+		 	 margin-bottom: 30px;
+		} 
+	}
+}
+/*top-phone
+===============================*/
+.top-phone{
+	.tabs{
+		text-align: right;
+		@media screen and (max-width: @sm) {
+		 	 text-align: center;
+		} 
+	}
+	.tab{
+		padding-bottom: 15px;
+		.inline-block;
+		cursor: pointer;
+		&.active{
+			text-decoration: underline;
+		}
+	}
+	.tab_item{
+		font-size: 35px;
+		text-align: right;
+		@media screen and (max-width: @sm) {
+		 	 text-align: center;
+		} 
+	}
+}
+/*big-title
+===============================*/
+.big-title{
+	margin-bottom: 20px;
+	.cleanvertising;
+	font-size: 60px;
+}
+/*big-subtitle
+===============================*/
+.big-subtitle{
+	margin-bottom: 45px;
+	.cleanvertising;
+	font-size: 37px;
+}
+/*header-tabs
+===============================*/
+.header-tabs{
+	.tabs{
+		font-size: 0;
+	}
+	.tab{
+		.inline-block;
+		padding: 0 40px;
+		height: 56px;
+		.robotobold;
+		font-size: 16px;
+		text-transform: uppercase;
+		line-height: 56px;
+		background: rgba(255,255,255, .25);
+		cursor: pointer;
+		&.active{
+			color: @textBlack;
+			background: rgba(255,255,255, .6);
+		}
+	}
+	.tab_content{
+		padding: 22px 35px;
+		color: @textBlack;
+		background: rgba(255,255,255, .6);
+	}
+	.tab-list{
+		li{
+			margin-bottom: 18px;
+			a{
+				position: relative;
+				padding-left: 50px;
+				.inline-block;
+				.robotobold;
+				font-size: 18px;
+				text-transform: uppercase;
+				color: inherit;
+				i{
+					position: absolute;
+					left: 0;
+					top: -3px;
+				}
+				.icon-heat::before,
+				.icon-hamburger::before,
+				.icon-world::before{
+					font-size: 30px;
+					color: #6f6a67;
+				}
+				i.icon-heat{
+					top: 0;
+					left: -4px;
+					&::before{
+						font-size: 40px;
+					}
+				}
+			}
+		}
+	}
+	.button-wrap{
+		text-align: right;
+	}
+}
+

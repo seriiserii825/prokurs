@@ -7,3 +7,52 @@
   height: @px;
   line-height: @px;
 }
+/*fonts
+===============================*/
+.roboto{
+	font-family: 'RobotoRegular', sans-serif;
+}
+.robotobold{
+	font-family: 'RobotoBold', sans-serif;
+}
+.cleanvertising{
+	font-family: 'CleanvertisingLight', sans-serif;
+}
+
+/*section
+===============================*/
+.section{
+	padding: 80px;
+	&__title{
+		.cleanvertising;
+		font-size: 50px;
+		color: @textBlue;
+	}
+	&.s_dark{
+		color: @textWhite;
+	}
+}
+.button{
+	.inline-block;
+	padding: 0 34px;
+	height: 46px;
+	.robotobold;
+	font-size: 16px;
+	line-height: 46px;
+	text-transform: uppercase;
+	color: @textWhite;
+	background: @bgRed;
+	border: none;
+	&:hover{
+		color: @textWhite;
+		background: lighten(@bgRed, 5%);
+	}
+	&.green{
+		color: @textWhite;
+		background: @bgGreen;
+	}
+	&.white{
+		color: @textBlack;
+		background: @bgWhite;
+	}
+}
