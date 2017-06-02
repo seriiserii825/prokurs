@@ -74,6 +74,9 @@
 		line-height: 56px;
 		background: rgba(255,255,255, .25);
 		cursor: pointer;
+		@media screen and (max-width: @xs) {
+		 	 display: block;
+		} 
 		&.active{
 			color: @textBlack;
 			background: rgba(255,255,255, .6);

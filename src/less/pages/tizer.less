@@ -1,0 +1,47 @@
+.tizer{
+	padding-top: 45px;
+	padding-bottom: 0;
+	background: linear-gradient(#c6d8ee, #e8eff7);
+	&__item{
+		position: relative;
+		margin-bottom: 35px;
+		padding-left: 80px;
+		min-height: 70px;
+		color: @textBlue;
+		span{
+			display: block;
+			font-size: 11px;
+			text-transform: uppercase;
+			&:first-child{
+				.inline-block;
+				margin-bottom: 5px;
+			}
+			&.big{
+				font-size: 20px;
+			}
+		}
+		.description{
+			position: relative;
+			top: 24px;
+			@media screen and (max-width: @lg) {
+			 	 top: 0;
+			} 
+		}
+	}
+	.col-md-3{
+		.tizer__item{
+			.img-wrap{
+				letter-spacing: -13px;
+			}
+		}
+	}
+	.img-wrap{
+		position: absolute;
+		top: 0;
+		left: -10px;
+		font-size: 75px;
+		@media screen and (max-width: @lg) {
+		 	 position: static;
+		} 
+	}
+}
