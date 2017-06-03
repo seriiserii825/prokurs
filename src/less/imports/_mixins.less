@@ -22,7 +22,8 @@
 /*section
 ===============================*/
 .section{
-	padding: 80px;
+	position: relative;
+	padding: 80px 0;
 	&__title{
 		.cleanvertising;
 		font-size: 50px;
@@ -30,6 +31,9 @@
 	}
 	&.s_dark{
 		color: @textWhite;
+		.section__title{
+			color: @textWhite;
+		}
 	}
 }
 .button{

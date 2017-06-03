@@ -1,0 +1,129 @@
+/*reviews
+===============================*/
+.reviews{
+	min-height: 790px;
+	background-image: url("../img/reviews-bg.jpg");
+	background-position: top center;
+	background-size: cover;
+	background-attachment: fixed;
+	/*section-title
+	===============================*/
+	.section__title{
+		margin-bottom: 25px;
+		text-align: center;
+		@media screen and (max-width: @xs) {
+		 	 font-size: 33px;
+		} 
+	}
+	/*slider
+	===============================*/
+	.slider{
+		/*img-wrap
+		===============================*/
+		.img-wrap{
+			display: table;
+			margin: 0 auto;
+			margin-bottom: 25px;
+			width: 164px;
+			height: 164px;
+			border-radius: 50%;
+			border: 10px solid #686462;
+			overflow: hidden;
+			img{
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		/*slider__item
+		===============================*/
+		&__item{
+			padding: 10px 0;
+			cursor: pointer;
+			&:focus{
+				outline: none;
+			}
+			&-title{
+				position: relative;
+				margin-bottom: 32px;
+				padding-bottom: 22px;
+				font-family: "Times New Roman", serif;
+				font-size: 22px;
+				font-weight: normal;
+				font-style: italic;
+				text-align: center;
+				&::after{
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 80px;
+					height: 1px;
+					background-color: #cea380;
+				}
+			}
+			p{
+				margin: 0 auto;
+				max-width: 720px;
+				font-size: 15px;
+				line-height: 24px;
+				text-align: center;
+			}
+		}
+		.slick-arrow{
+			position: absolute;
+			top: 40%;
+			transform: translateX(-50%);
+			width: 37px;
+			height: 140px;
+			font-size: 0;
+			border: none;
+			outline: none;
+			opacity: 0;
+		}
+		.slick-prev,
+		.slick-next{
+			&.hover{
+				transition: all .5s;
+				opacity: 1;
+			}
+		}
+		.slick-prev{
+			left: -50px;
+			background: url(../img/slick-left.svg) no-repeat 0 0;
+			&.hover{
+				left: 0;
+			}
+		}
+		.slick-next{
+			right: -50px;
+			background: url(../img/slick-right.svg) no-repeat 0 0;
+			&.hover{
+				right: 0;
+			}
+		}
+		.slick-dots{
+			text-align: center;
+			li{
+				.inline-block;
+				margin: 0 3px;
+				&.slick-active{
+					button{
+						opacity: 1;
+					}
+				}
+				button{
+					width: 10px;
+					height: 10px;
+					font-size: 0;
+					opacity: .6;
+					border-radius: 50%;
+					border: none;
+					&:focus{
+						outline: none;
+					}
+				}
+			}
+		}
+	}
+}
