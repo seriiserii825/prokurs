@@ -55,5 +55,14 @@ $(function () {
 	    enabled: true
   	},
 	});
+
+	/*contacts tab
+	===============================*/
+	$("#js-contacts .tab_item").not(":first").hide();
+	$("#js-contacts .tab").click(function() {
+		$("#js-contacts .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$("#js-contacts .tab_item").hide().eq($(this).index()).fadeIn();
+	}).eq(0).addClass("active");
+
     
 }());

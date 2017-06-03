@@ -1,0 +1,46 @@
+.contacts{
+	text-align: center;
+	&__header{
+		padding: 45px 0 30px;
+		background: @bgWhite;
+	}
+	&__title{
+		.inline-block;
+		margin-right: 30px;
+		.cleanvertising;
+		font-size: 50px;
+		color: @textBlack;
+	}
+	.tabs{
+		font-size: 0;
+		.inline-block;
+		.tab{
+			.inline-block;
+			width: 210px;
+			height: 50px;
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 40px;
+			text-transform: uppercase;
+			color: @textRed;
+			background: @bgWhite;
+			border: 5px solid @bgRed;
+			cursor: pointer;
+			&.active{
+				color: @textWhite;
+				background: @bgRed;
+			}
+		}
+	}
+	.tab_content{
+		font-size: 18px;
+		.tab_item{
+			text-indent: 200px;
+		}
+		.map{
+			margin-top: 30px;
+			min-height: 500px;
+			background: #e1d6b0;
+		}
+	}
+}
