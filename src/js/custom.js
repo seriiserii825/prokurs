@@ -64,5 +64,13 @@ $(function () {
 		$("#js-contacts .tab_item").hide().eq($(this).index()).fadeIn();
 	}).eq(0).addClass("active");
 
+	/*footer tab
+	===============================*/
+	$("#js-footer-main .tab_item").not(":first").hide();
+	$("#js-footer-main .tab").click(function() {
+		$("#js-footer-main .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$("#js-footer-main .tab_item").hide().eq($(this).index()).fadeIn();
+	}).eq(0).addClass("active");
+
     
 }());

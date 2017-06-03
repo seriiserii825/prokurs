@@ -10,6 +10,9 @@
 		.cleanvertising;
 		font-size: 50px;
 		color: @textBlack;
+		@media screen and (max-width: @sm) {
+		 	 margin-bottom: 30px;
+		} 
 	}
 	.tabs{
 		font-size: 0;
@@ -26,6 +29,9 @@
 			background: @bgWhite;
 			border: 5px solid @bgRed;
 			cursor: pointer;
+			@media screen and (max-width: 430px) {
+			 	width: 150px; 
+			} 
 			&.active{
 				color: @textWhite;
 				background: @bgRed;
@@ -36,11 +42,18 @@
 		font-size: 18px;
 		.tab_item{
 			text-indent: 200px;
+			@media screen and (max-width: @sm) {
+			 	 text-indent: 0;
+			} 
 		}
 		.map{
 			margin-top: 30px;
 			min-height: 500px;
 			background: #e1d6b0;
+			iframe{
+				width: 100%;
+				height: 100%;
+			}
 		}
 	}
 }

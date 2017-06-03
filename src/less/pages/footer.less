@@ -1,0 +1,35 @@
+.footer-main{
+	padding: 95px 0;
+	.section__title{
+		margin-bottom: 30px;
+		text-align: center;
+		color: @textBlack;
+	}
+	.footer__description{
+		margin-bottom: 60px;
+		font-size: 18px;
+		text-align: center;
+	}
+	.bottom-phone{
+		margin-bottom: 40px;
+		text-align: center;
+		color: @textRed;
+		.tab{
+			padding-bottom: 15px;
+			.inline-block;
+			cursor: pointer;
+			&.active{
+				text-decoration: underline;
+			}
+		}
+		.tab_item{
+			font-size: 35px;
+			@media screen and (max-width: @sm) {
+			 	 text-align: center;
+			} 
+		}
+	}
+	.button-wrap{
+		text-align: center;
+	}
+}
