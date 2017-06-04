@@ -72,5 +72,26 @@ $(function () {
 		$("#js-footer-main .tab_item").hide().eq($(this).index()).fadeIn();
 	}).eq(0).addClass("active");
 
+	/*animation
+	===============================*/
+	var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       150,          // distance to the element when triggering the animation (default is 0)
+    mobile:       false,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+    },
+    scrollContainer: null // optional scroll container selector, otherwise use window
+  }
+);
+wow.init();
+
+$('.section__title').addClass('wow zoomIn');
+$('#js-header-tabs').addClass('wow flipInX');
+$('#js-profi .profi__item').addClass('wow fadeInLeftBig');
+$('#js-contacts .contacts__title').addClass('wow fadeInLeftBig');
+$('#js-contacts .tabs').addClass('wow fadeInRightBig');
     
 }());
